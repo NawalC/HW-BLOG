@@ -8,6 +8,11 @@ main {
     flex-direction: column;
 }
 
+.article:first-child {
+    background-color: rgb(9, 245, 245);
+    font-weight: 800;
+}
+
 h1 {
     font-size: 3em;
     display: flex;
