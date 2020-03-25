@@ -1,12 +1,24 @@
+/* :root {
+    font-size: 16px;
+} */
+
 body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    margin: 10px;
+    margin: 1rem;
     padding: 0;
     background-color: #d0d3d4;
 }
 
 .container {
     display: flex;
+}
+
+img {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 15rem;
+    height: 13.5rem;
 }
 
 h1 {
@@ -17,7 +29,7 @@ h1 {
     background: linear-gradient(to right, #eaecee, #17202a);
 }
 
-h2 {
+.main h2 {
     display: flex;
     font-size: 2rem;
     justify-content: center;
@@ -26,13 +38,19 @@ h2 {
 }
 
 h3 {
+    font-size: 1.5rem;
     justify-self: center;
     align-self: center;
-    background-color: ;
+}
+
+h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.1rem;
 }
 
 p {
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 .main {
@@ -59,12 +77,13 @@ p {
     align-items: center;
     justify-content: flex-start;
     flex-basis: 33.3%;
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 .prevention {
     display: flex;
     flex-direction: column;
+    margin-left: 0.7rem;
 }
 
 .prevention_boxes {
@@ -78,13 +97,13 @@ p {
 .stay {
     display: grid;
     grid-area: stay;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 
 .wash {
     display: grid;
     grid-area: wash;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 
 .cough {
@@ -92,13 +111,41 @@ p {
     grid-area: cough;
 }
 
-.statistics {
+.side-bar {
     display: flex;
     flex-direction: column;
+    margin: 0;
     flex-basis: 25%;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    background-color: #a6acaf;
+}
+
+#side_heading {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.statistics h3 {
+    color: #943126;
+    font-size: 1.4rem;
+}
+
+.statistics h4 {
+    background-color: #050505;
+    color: #f8f9fa;
+    padding: 0.5rem 5rem;
+}
+
+.statistics p {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .world,
@@ -106,16 +153,63 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 footer {
     border-top: 0.5px solid grey;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 0.7rem;
 }
 
 footer>span {
     font-style: italic;
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 320px) {
+     :root {
+        font-size: 11px;
+    }
+    .container,
+    .main,
+    .symptoms-box,
+    .prevention_boxes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+     :root {
+        font-size: 13px;
+    }
+    .container,
+    .main,
+    .symptoms-box,
+    .prevention_boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+     :root {
+        font-size: 13px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .statistics {
+        display: flex;
+        flex-direction: row;
+    }
 }
