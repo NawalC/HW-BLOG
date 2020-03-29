@@ -1,12 +1,8 @@
-/* :root {
-    font-size: 16px;
-} */
-
 body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin: 1rem;
     padding: 0;
-    background-color: #d0d3d4;
+    background-color: #acc4ce;
 }
 
 .container {
@@ -26,15 +22,16 @@ h1 {
     justify-content: center;
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(to right, #eaecee, #17202a);
+    background: #294552;
+    color: #9eb9b3;
 }
 
 .main h2 {
     display: flex;
     font-size: 2rem;
     justify-content: center;
-    background-color: #a04000;
-    color: #f8f9f9;
+    background-color: #9eb9b3;
+    color: #00070a;
 }
 
 h3 {
@@ -118,7 +115,7 @@ p {
     flex-basis: 25%;
     justify-content: center;
     align-items: center;
-    background-color: #a6acaf;
+    background-color: rgba(89, 120, 132, 0.2);
 }
 
 #side_heading {
